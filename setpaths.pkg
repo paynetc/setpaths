@@ -1,0 +1,7 @@
+v 3
+d setpaths
+d Distribution-Date: 22nov2023
+f setpaths.ado
+f setpaths.dlg
+f setpaths.sthlp
+

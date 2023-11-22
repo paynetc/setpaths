@@ -1,0 +1,50 @@
+/* 
+  ajicpath dialog box
+  version 1.2.1 22jul2020
+*/  
+
+
+VERSION 16.0
+
+POSITION . . 410 250
+
+DIALOG main, label("setpaths setup") tabtitle("Do path")
+BEGIN
+  TEXT     tx_gen      10  10   120  .,	label("File path for dofiles:")
+  FILE     dopath      10 +20   390  ., label("Do path ...") directory
+  
+/*   TEXT     tx_data      10  +40   120  .,	label("File path for data files:")
+  FILE     datapath      10 +20   390  ., label("Browse ...")
+  
+  EDIT     ed_gen      10  +20  120  .,	error("Generate variable")
+  TEXT     tx_exp      10  +25  390  .,	label("Contents:")
+  EXP      ex_exp      10  +20  390  ., label("Create ...")        ///
+           error("Contents")
+*/		   
+  TEXT     tx_data      10  +40   120  .,	label("File path for data files:")
+  FILE     datapath      10 +20   390  ., label("Data path ...") directory	   
+  
+END
+
+
+OK ok1,      label("OK")
+CANCEL can1, label("Cancel")
+SUBMIT sub1, label("Submit")
+HELP hlp1,   view("help ajicpath")
+RESET res1
+COPY copy1
+
+PROGRAM command
+BEGIN
+    put "ajicpath "
+    require main.dopath
+    put `"""'
+	put main.dopath
+	put `"""'" "
+	
+	require main.datapath
+	put `"""'
+	put main.datapath
+	put `"""'
+    
+END

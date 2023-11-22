@@ -1,0 +1,7 @@
+v 3
+
+d setpaths this is description
+
+
+p setpaths Sets Stata paths
+
