@@ -4,10 +4,10 @@ A Stata command to create $dopath and $datapath globals using a dialog box.
 
 ## Installation
 ~~~
-    net from https://gitlab.com/tpayne9/ajicpath/-/raw/master/
+    net from "https://raw.githubusercontent.com/paynetc/setpaths/master"
 
-    net install ajicpath
+    net install setpaths
     
-    help ajicpath
+    help setpaths
 ~~~
 
