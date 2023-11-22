@@ -8,7 +8,7 @@ program setpaths
 	
 	if `"`keepexisting'"' == "" | "$dopath" == "" | "$datapath" == "" {
 		if `"`anything'"' == "" {
-			db ajicpath
+			db setpaths
 			di as text "Showing dialog box..."
 			di as error "Rerun do-file after paths are set."
 			error 1

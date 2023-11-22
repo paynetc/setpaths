@@ -1,5 +1,5 @@
 /* 
-  ajicpath dialog box
+  setpaths dialog box
   version 1.2.1 22jul2020
 */  
 
@@ -30,13 +30,13 @@ END
 OK ok1,      label("OK")
 CANCEL can1, label("Cancel")
 SUBMIT sub1, label("Submit")
-HELP hlp1,   view("help ajicpath")
+HELP hlp1,   view("help setpaths")
 RESET res1
 COPY copy1
 
 PROGRAM command
 BEGIN
-    put "ajicpath "
+    put "setpaths "
     require main.dopath
     put `"""'
 	put main.dopath
